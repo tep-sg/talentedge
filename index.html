@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalentEdge Performance | Building Stronger SMEs & PMEs</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #0a0a0a; /* Deep Charcoal */
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #ffffff 0%, #a1a1a1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-glow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80vw;
+            height: 80vw;
+            max-width: 600px;
+            background: radial-gradient(circle, rgba(255,255,255,0.06) 0%, rgba(0,0,0,0) 70%);
+            z-index: -1;
+            pointer-events: none;
+        }
+        .nav-blur {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            background-color: rgba(10, 10, 10, 0.85);
+        }
+        .card, .form-input {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            border-color: rgba(59, 130, 246, 0.3);
+            background: rgba(15, 15, 25, 0.6);
+            transform: translateY(-4px);
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: rgba(59, 130, 246, 0.5);
+            background: rgba(255, 255, 255, 0.05);
+        }
+        #mobile-menu {
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            transform: translateX(100%);
+        }
+        #mobile-menu.active {
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed top-0 w-full z-50 nav-blur border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="text-2xl font-extrabold tracking-tighter hover:opacity-80 transition">TalentEdge Performance</a>
+            
+            <div class="hidden md:flex space-x-10 text-sm font-semibold text-gray-400">
+                <a href="#" class="hover:text-white transition">Home</a>
+                <a href="#services" class="hover:text-white transition">Services</a>
+                <a href="#contact" class="hover:text-white transition">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <a href="#contact" class="hidden sm:block bg-white text-black px-6 py-2 rounded-full text-sm font-bold hover:bg-gray-200 transition">
+                    Get Started
+                </a>
+                <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-[#0a0a0a] flex flex-col items-center justify-center space-y-8 text-3xl font-bold md:hidden">
+        <button id="close-btn" class="absolute top-6 right-6 text-gray-400">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+        <a href="#" class="mobile-link">Home</a>
+        <a href="#services" class="mobile-link">Services</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+
+    <section class="relative min-h-screen flex flex-col items-center justify-center text-center px-6 pt-20">
+        <div class="hero-glow"></div>
+        <div class="inline-block px-5 py-2 mb-8 border border-white/10 rounded-full bg-white/5 text-[11px] font-bold tracking-[0.2em] text-blue-400 uppercase">
+            Elevating SMEs & PMEs
+        </div>
+        <h1 class="text-5xl md:text-8xl font-extrabold tracking-tight gradient-text mb-8 leading-[1.1]">
+            Transforming <br> Excellence
+        </h1>
+        <p class="max-w-2xl text-gray-400 text-lg md:text-xl mb-12 leading-relaxed px-4 font-medium">
+            Strategic coaching and digital frameworks designed to drive <br class="hidden md:block"> growth for modern professionals and enterprises.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-5 w-full sm:w-auto px-6">
+            <a href="#services" class="bg-white text-black px-10 py-4 rounded-2xl font-extrabold hover:scale-105 transition-transform text-center shadow-lg shadow-white/5">
+                Our Services
+            </a>
+            <a href="#contact" class="px-10 py-4 rounded-2xl font-extrabold border border-white/10 hover:bg-white/5 transition text-center">
+                Contact Us
+            </a>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 mb-12">
+        <div class="relative group">
+            <div class="absolute -inset-1 bg-gradient-to-r from-blue-600/20 to-transparent rounded-[2.5rem] blur opacity-25"></div>
+            <img 
+                src="teamwork.jpg" 
+                alt="TalentEdge Performance Teamwork" 
+                class="relative w-full h-auto max-h-[600px] object-cover rounded-[2.5rem] border border-white/10 shadow-2xl"
+            >
+        </div>
+    </section>
+
+    <section id="services" class="max-w-7xl mx-auto px-6 py-20 md:py-32">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
+            
+            <a href="coaching.html" class="card group p-8 md:p-10 rounded-[2.5rem] relative overflow-hidden flex flex-col items-center md:items-start text-center md:text-left w-full max-w-sm md:max-w-none block">
+                <div class="relative z-10">
+                    <div class="w-14 h-14 bg-blue-950/30 rounded-2xl mb-6 flex items-center justify-center text-blue-400 border border-blue-900/30 mx-auto md:mx-0">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 tracking-tight text-white">Professional Growth</h3>
+                    <p class="text-gray-400 leading-relaxed font-medium group-hover:text-blue-100 transition">Specialized coaching to sharpen leadership and core competencies for PMEs.</p>
+                </div>
+            </a>
+            
+            <a href="enterprise.html" class="card group p-8 md:p-10 rounded-[2.5rem] relative overflow-hidden flex flex-col items-center md:items-start text-center md:text-left w-full max-w-sm md:max-w-none block">
+                <div class="relative z-10">
+                    <div class="w-14 h-14 bg-blue-950/30 rounded-2xl mb-6 flex items-center justify-center text-blue-400 border border-blue-900/30 mx-auto md:mx-0">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 tracking-tight text-white">Enterprise Resilience</h3>
+                    <p class="text-gray-400 leading-relaxed font-medium group-hover:text-blue-100 transition">Equipping SMEs with strategic frameworks to thrive in shifting markets.</p>
+                </div>
+            </a>
+
+            <a href="innovation.html" class="card group p-8 md:p-10 rounded-[2.5rem] relative overflow-hidden flex flex-col items-center md:items-start text-center md:text-left w-full max-w-sm md:max-w-none block">
+                <div class="relative z-10">
+                    <div class="w-14 h-14 bg-blue-950/30 rounded-2xl mb-6 flex items-center justify-center text-blue-400 border border-blue-900/30 mx-auto md:mx-0">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 tracking-tight text-white">Digital Innovation</h3>
+                    <p class="text-gray-400 leading-relaxed font-medium group-hover:text-blue-100 transition">Streamlining operations through integrated ICT and AI solutions.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="contact" class="max-w-7xl mx-auto px-6 py-20 md:py-32 border-t border-white/5">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            
+            <div class="space-y-8">
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-[2.5rem] blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                    <img 
+                        src="index pic.jpg" 
+                        alt="Coaching Session" 
+                        class="relative w-full h-[400px] object-cover rounded-[2.5rem] border border-white/10 shadow-2xl"
+                    >
+                </div>
+                
+                <div class="text-center lg:text-left space-y-4">
+                    <h2 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white">Let's connect.</h2>
+                    <p class="text-gray-400 text-lg leading-relaxed max-w-md mx-auto lg:mx-0 font-medium">
+                        Ready to take the next step in your professional or enterprise journey?
+                    </p>
+                    <div class="flex items-center justify-center lg:justify-start gap-5 text-gray-200 pt-2">
+                        <div class="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center border border-white/10 text-blue-400">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <span class="font-bold text-lg">ckpan@talentedgeasia.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-8 md:p-12 rounded-[2.5rem] bg-white/5 border border-white/10 shadow-2xl relative z-10">
+                <form 
+                    action="https://formspree.io/f/xqeydqqo" 
+                    method="POST" 
+                    id="contactForm"
+                    class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-3 text-left">
+                            <label class="text-xs font-bold text-gray-500 uppercase tracking-widest">Full Name</label>
+                            <input type="text" name="name" required placeholder="John Tan" class="form-input w-full p-4 rounded-2xl text-white font-semibold">
+                        </div>
+                        <div class="space-y-3 text-left">
+                            <label class="text-xs font-bold text-gray-500 uppercase tracking-widest">Email</label>
+                            <input type="email" name="email" required placeholder="john@example.com" class="form-input w-full p-4 rounded-2xl text-white font-semibold">
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-3 text-left">
+                        <label class="text-xs font-bold text-gray-500 uppercase tracking-widest">Inquiry Type</label>
+                        <input type="text" name="subject" required placeholder="e.g. Leadership Coaching or SME Strategy" class="form-input w-full p-4 rounded-2xl text-white font-semibold">
+                    </div>
+
+                    <div class="space-y-3 text-left">
+                        <label class="text-xs font-bold text-gray-500 uppercase tracking-widest">Message</label>
+                        <textarea name="message" required rows="4" placeholder="How can we help?" class="form-input w-full p-4 rounded-2xl text-white font-semibold"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-white text-black font-extrabold py-5 rounded-2xl hover:bg-blue-50 transition-all text-lg shadow-xl">
+                        Send Inquiry
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="py-16 text-center border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-gray-500 text-xs font-bold tracking-widest uppercase">
+            <p>&copy; 2026 TalentEdge Performance LLP | Singapore.</p>
+            <div class="flex space-x-10 mt-6 md:mt-0">
+                <a href="https://www.linkedin.com/company/talentedge-performance" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition">LinkedIn</a>
+                <a href="privacy.html" class="hover:text-white transition uppercase">Privacy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').onsubmit = function(e) {
+            const width = 500;
+            const height = 600;
+            const left = (window.screen.width / 2) - (width / 2);
+            const top = (window.screen.height / 2) - (height / 2);
+
+            window.open('', 'formPopup', 
+                `width=${width},height=${height},top=${top},left=${left},status=no,menubar=no,toolbar=no,location=no`
+            );
+            
+            this.target = 'formPopup';
+        };
+
+        const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        function toggleMenu() {
+            mobileMenu.classList.toggle('active');
+            if (mobileMenu.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        menuBtn.addEventListener('click', toggleMenu);
+        closeBtn.addEventListener('click', toggleMenu);
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', toggleMenu);
+        });
+    </script>
+
+<a href="https://wa.me/+6590082357" 
+   target="_blank" 
+   style="position:fixed; width:48px; height:48px; bottom:30px; right:30px; background-color:#25d366; color:#FFF; border-radius:50px; text-align:center; box-shadow: 0 4px 10px rgba(0,0,0,0.2); z-index:1000; display:flex; align-items:center; justify-content:center; transition: transform 0.3s ease;">
+    <svg width="26" height="26" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.63 1.438h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+</a>    
+    
+</body>
+</html>

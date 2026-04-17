@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISC + EQ Advantage | TalentEdge Performance</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            margin: 0; padding: 0;
+            overflow-x: hidden;
+        }
+        .nav-blur {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            background-color: rgba(10, 10, 10, 0.85);
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+        }
+        #mobile-menu {
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            transform: translateX(100%);
+        }
+        #mobile-menu.active { transform: translateX(0); }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed top-0 w-full z-50 nav-blur border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-extrabold tracking-tighter hover:opacity-80 transition">TalentEdge Performance</a>
+            <div class="hidden md:flex space-x-10 text-sm font-semibold text-gray-400">
+                <a href="index.html" class="hover:text-white transition">Home</a>
+                <a href="coaching.html" class="hover:text-white transition">Coaching</a>
+                <a href="enterprise.html" class="hover:text-white transition">Enterprise</a>
+                <a href="disc-eq.html" class="text-white">DISC + EQ</a>
+                <a href="index.html#contact" class="hover:text-white transition">Contact</a>
+            </div>
+            <button id="menu-btn" class="md:hidden text-white"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button>
+        </div>
+    </nav>
+
+    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-[#0a0a0a] flex flex-col items-center justify-center space-y-8 text-3xl font-bold md:hidden">
+        <button id="close-btn" class="absolute top-6 right-6 text-gray-400"><svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button>
+        <a href="index.html">Home</a>
+        <a href="coaching.html">Coaching</a>
+        <a href="enterprise.html">Enterprise</a>
+        <a href="disc-eq.html">DISC + EQ</a>
+    </div>
+
+    <section class="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+        <div class="inline-block px-4 py-1.5 mb-6 border border-purple-500/30 rounded-full bg-purple-500/10 text-[10px] font-bold tracking-[0.2em] text-purple-400 uppercase">
+            Diagnostic Frameworks
+        </div>
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-8">DISC + EQ <br><span class="text-gray-500">Performance Advantage.</span></h1>
+        <p class="max-w-2xl text-gray-400 text-lg md:text-xl leading-relaxed">
+            In Singapore’s fast-paced business environment, we integrate behavior and emotion into a singular, powerful diagnostic framework designed for SMEs and PMEs.
+        </p>
+    </section>
+
+    <section class="py-20 px-6 max-w-7xl mx-auto border-t border-white/5">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="order-2 lg:order-1">
+                <div class="w-14 h-14 bg-purple-900/20 rounded-2xl mb-8 flex items-center justify-center text-purple-400 border border-purple-500/20">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-bold mb-6">The Power of Dual Integration</h2>
+                <p class="text-gray-400 mb-6 leading-relaxed">DISC provides a practical lens to understand external behaviors, while EQ offers the internal skills required to regulate those behaviors effectively.</p>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3 text-sm font-semibold text-gray-300">
+                        <div class="w-1.5 h-1.5 bg-purple-500 rounded-full"></div> Core Mental Models for Excellence
+                    </div>
+                    <div class="flex items-center gap-3 text-sm font-semibold text-gray-300">
+                        <div class="w-1.5 h-1.5 bg-purple-500 rounded-full"></div> Behavioral Logic of Needs
+                    </div>
+                </div>
+            </div>
+            <div class="order-1 lg:order-2 bg-white/5 rounded-[2.5rem] overflow-hidden border border-white/10 h-80 flex items-center justify-center">
+                <img src="disc-eq.jpg" alt="DISC EQ" class="w-full h-full object-cover opacity-60">
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 max-w-7xl mx-auto border-t border-white/5">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="bg-white/5 rounded-[2.5rem] overflow-hidden border border-white/10 h-80 flex items-center justify-center">
+                 <div class="p-10 text-center">
+                    <span class="text-purple-400 font-bold tracking-widest uppercase text-xs">The Platinum Rule</span>
+                    <p class="text-2xl font-bold mt-4 italic">"We teach PMEs to move beyond the Golden Rule - Instead of treating others how you want to be treated, treat others <u>how</u> they want to be treated."</p>
+                 </div>
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold mb-6">Cognitive Adaptation</h2>
+                <p class="text-gray-400 mb-6 leading-relaxed">We move beyond simple personality tests. We help you decode observable actions as data points that reveal underlying needs and fears—such as a "D" style’s need for control or a "C" style’s fear of being wrong.</p>
+                <p class="text-gray-400 leading-relaxed">Understanding the "Energy Cost of Adaptation" is key to maximizing retention and reducing burnout.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 max-w-7xl mx-auto border-t border-white/5">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="order-2 lg:order-1">
+                <h2 class="text-3xl font-bold mb-6">Solving "Artificial Harmony"</h2>
+                <p class="text-gray-400 mb-6 leading-relaxed">Many Singaporean teams suffer from a state where no one disagrees, yet results suffer. Using Lencioni’s Five Behaviours, we build vulnerability-based trust.</p>
+                <ul class="space-y-4 text-sm text-gray-500 font-bold uppercase tracking-wider">
+                    <li class="flex items-center gap-3"><svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Navigate Conflict Continuum</li>
+                    <li class="flex items-center gap-3"><svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Drive Collective Results</li>
+                </ul>
+            </div>
+            <div class="order-1 lg:order-2 glass-panel p-10 rounded-[2.5rem]">
+                <h4 class="text-purple-400 font-bold mb-4">Tangible Outcomes</h4>
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex justify-between text-xs mb-2"><span>Productivity Metric</span><span>94%</span></div>
+                        <div class="h-1 w-full bg-white/10 rounded-full"><div class="h-full bg-purple-500 w-[94%]"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-xs mb-2"><span>Team Cohesion</span><span>88%</span></div>
+                        <div class="h-1 w-full bg-white/10 rounded-full"><div class="h-full bg-blue-500 w-[88%]"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 px-6 text-center border-t border-white/5 bg-gradient-to-b from-transparent to-purple-900/5">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-extrabold mb-6 leading-tight">Scale with Awareness.</h2>
+            <p class="text-gray-400 text-lg mb-10 leading-relaxed">
+                Book a discovery session to align your professional goals with proven coaching frameworks.
+            </p>
+            <a href="index.html#contact" class="bg-white text-black px-12 py-5 rounded-full font-extrabold hover:bg-gray-200 transition-all hover:scale-105 inline-block mb-10 shadow-xl shadow-white/5">
+                Start Your Assessment
+            </a>
+            <p class="text-sm text-gray-500 font-medium leading-relaxed max-w-xl mx-auto">
+                A Certified EQ and DISC Practitioner will work with you to understand your results and guide your development journey.
+            </p>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-gray-600 text-[10px] font-bold uppercase tracking-[0.3em] border-t border-white/5">
+        &copy; 2026 TalentEdge Performance. Singapore.
+    </footer>
+
+    <a href="https://wa.me/+6590082357" target="_blank" style="position:fixed; width:48px; height:48px; bottom:30px; right:30px; background-color:#25d366; color:#FFF; border-radius:50px; text-align:center; box-shadow: 0 4px 10px rgba(0,0,0,0.2); z-index:1000; display:flex; align-items:center; justify-content:center; transition: transform 0.3s ease;">
+        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.63 1.438h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    </a>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => mobileMenu.classList.add('active'));
+        closeBtn.addEventListener('click', () => mobileMenu.classList.remove('active'));
+    </script>
+</body>
+</html>

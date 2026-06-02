@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.talentedgeasia.com
+Sitemap: https://www.talentedgeasia.com/sitemap.xml

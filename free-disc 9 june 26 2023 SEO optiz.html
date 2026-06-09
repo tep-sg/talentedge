@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Free DISC Leadership Assessment & Behavioral Snapshot | TalentEdge Asia</title>
+<meta name="description" content="Understand your unique leadership style with TalentEdge Asia's free DISC Leadership Snapshot. Get instant, insightful behavioral assessment results to drive your professional growth.">
+<link rel="canonical" href="https://talentedgeasia.com/free-disc.html">
+<link rel="icon" href="https://talentedgeasia.com/favicon.png" type="image/png">
+
+<meta name="robots" content="index, follow">
+
+<meta property="og:title" content="Free DISC Leadership Assessment | TalentEdge Asia">
+<meta property="og:description" content="Discover your behavioral leadership style in 5 minutes with our free DISC Leadership Snapshot. Get instant insights today.">
+<meta property="og:url" content="https://talentedgeasia.com/free-disc.html">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://talentedgeasia.com/talentedge-social-share.jpg"> 
+
+<!-- Schema Markup (JSON-LD) for Local Business -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Free DISC Leadership Assessment & Behavioral Snapshot",
+  "description": "Understand your unique leadership style with TalentEdge Asia's free DISC Leadership Snapshot. Get instant, insightful behavioral assessment results to drive your professional growth.",
+  "url": "https://talentedgeasia.com/free-disc.html",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "TalentEdge Asia",
+    "url": "https://talentedgeasia.com/"
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://talentedgeasia.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Free DISC Assessment",
+        "item": "https://talentedgeasia.com/free-disc.html"
+      }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "TalentEdge Asia",
+  "legalName": "Talentedge Performance LLP",
+  "url": "https://talentedgeasia.com/",
+  "logo": "https://talentedgeasia.com/favicon.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+6590082357",
+    "contactType": "customer service",
+    "email": "ckpan@talentedgeasia.com",
+    "areaServed": "SG",
+    "availableLanguage": "English"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "60 Paya Lebar Rd, #06-28 Paya Lebar Square",
+    "addressLocality": "Singapore",
+    "postalCode": "409051",
+    "addressCountry": "SG"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/talentedge-performance"
+  ]
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#1a2e5a;--navy-light:#243672;--navy-dark:#111e3d;--gold:#2a7f8f;--white:#ffffff;--grey:#f4f6f9;--grey2:#e8ecf2;--grey3:#9aa3b2;--text:#1a2e5a;--radius:12px;--shadow:0 4px 24px rgba(26,46,90,0.10)}
+body{font-family:'Segoe UI',Arial,sans-serif;background:var(--grey);color:var(--text);min-height:100vh}
+.screen{display:none;min-height:100vh;flex-direction:column;align-items:center;justify-content:flex-start;padding:20px 16px 40px}
+.screen.active{display:flex}
+.logo-bar{width:100%;max-width:780px;display:flex;align-items:center;justify-content:space-between;padding:18px 0 10px;border-bottom:2px solid var(--navy);margin-bottom:28px}
+.logo-text{font-family:'Poppins',sans-serif;font-size:1.35rem;font-weight:700;color:var(--navy);letter-spacing:.3px}
+.logo-sub{font-size:.75rem;color:var(--grey3);margin-top:2px;font-family:'Segoe UI',Arial,sans-serif}
+.badge{background:var(--navy);color:#fff;border-radius:20px;padding:5px 14px;font-size:.75rem;font-weight:600;letter-spacing:.5px}
+.card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:36px 32px;width:100%;max-width:680px;margin-bottom:20px}
+.card h1{font-size:1.7rem;color:var(--navy);line-height:1.3;margin-bottom:10px}
+.card h2{font-size:1.2rem;color:var(--navy);margin-bottom:16px}
+.card p{color:#444;line-height:1.7;margin-bottom:14px;font-size:.97rem}
+.form-group{margin-bottom:18px}
+.form-group label{display:block;font-weight:600;color:var(--navy);margin-bottom:6px;font-size:.93rem}
+.form-group input[type=text]{width:100%;padding:12px 14px;border:1.5px solid var(--grey2);border-radius:8px;font-size:.97rem;color:var(--text);background:#fff;transition:border .2s}
+.form-group input:focus{outline:none;border-color:var(--navy)}
+.consent-row{display:flex;align-items:flex-start;gap:12px;background:var(--grey);border-radius:8px;padding:14px;margin:18px 0}
+.consent-row input[type=checkbox]{margin-top:3px;accent-color:var(--navy);width:18px;height:18px;flex-shrink:0}
+.consent-row label{font-size:.88rem;color:#444;line-height:1.5}
+.btn{display:inline-block;padding:13px 32px;border-radius:8px;font-size:1rem;font-weight:700;cursor:pointer;border:none;transition:all .2s;text-decoration:none;text-align:center}
+.btn-primary{background:var(--navy);color:#fff}
+.btn-primary:hover{background:var(--navy-light)}
+.btn-gold{background:var(--gold);color:#fff}
+.btn-gold:hover{background:#b8903a}
+.btn-outline{background:#fff;color:var(--navy);border:2px solid var(--navy)}
+.btn-outline:hover{background:var(--navy);color:#fff}
+.btn-sm{padding:9px 20px;font-size:.88rem}
+.err{color:#c0392b;font-size:.85rem;margin-top:5px;display:none}
+.progress-wrap{width:100%;max-width:680px;margin-bottom:20px}
+.progress-label{display:flex;justify-content:space-between;font-size:.85rem;color:var(--grey3);margin-bottom:6px;font-weight:600}
+.progress-bar{background:var(--grey2);border-radius:20px;height:10px;overflow:hidden}
+.progress-fill{background:linear-gradient(90deg,var(--navy),var(--gold));height:100%;border-radius:20px;transition:width .4s}
+.q-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:28px;width:100%;max-width:680px}
+.q-num{font-size:.82rem;font-weight:700;color:var(--gold);letter-spacing:1px;text-transform:uppercase;margin-bottom:10px}
+.q-text{font-size:1.08rem;color:var(--navy);font-weight:600;line-height:1.5;margin-bottom:22px}
+.options{display:flex;flex-direction:column;gap:12px}
+.opt{display:flex;align-items:flex-start;gap:14px;padding:14px 16px;border:1.5px solid var(--grey2);border-radius:8px;cursor:pointer;transition:all .18s}
+.opt:hover{border-color:var(--navy);background:var(--grey)}
+.opt.selected{border-color:var(--navy);background:rgba(26,46,90,.07)}
+.opt-letter{width:28px;height:28px;border-radius:50%;background:var(--grey2);color:var(--navy);font-weight:700;font-size:.85rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.opt.selected .opt-letter{background:var(--navy);color:#fff}
+.opt-text{font-size:.95rem;color:#333;line-height:1.5}
+.q-nav{display:flex;justify-content:space-between;margin-top:22px;gap:12px}
+.results-header{background:linear-gradient(135deg,var(--navy-dark),var(--navy));border-radius:var(--radius);padding:28px;color:#fff;width:100%;max-width:780px;margin-bottom:18px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px}
+.results-header h2{font-size:1.4rem;margin-bottom:4px}
+.results-header p{opacity:.8;font-size:.9rem}
+.disc-badges{display:flex;gap:12px;flex-wrap:wrap}
+.disc-badge{padding:8px 22px;border-radius:30px;font-weight:700;font-size:.95rem;color:#fff}
+.badge-D{background:#e74c3c}.badge-I{background:#f39c12}.badge-S{background:#27ae60}.badge-C{background:#2980b9}
+.results-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;width:100%;max-width:780px;margin-bottom:16px}
+@media(max-width:600px){.results-grid{grid-template-columns:1fr}.card{padding:22px 16px}.q-card{padding:20px 14px}.results-header{padding:20px 16px}}
+.section-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:22px}
+.section-card h3{font-size:1rem;color:var(--navy);font-weight:700;margin-bottom:10px}
+.section-card p,.section-card li{font-size:.9rem;color:#444;line-height:1.65}
+.section-card ul{padding-left:18px}
+.section-card li{margin-bottom:6px}
+.chart-wrap{position:relative;height:220px}
+.pct-bars{display:flex;flex-direction:column;gap:10px;margin-top:8px}
+.pct-row{display:flex;align-items:center;gap:10px}
+.pct-label{width:22px;font-weight:700;font-size:.9rem}
+.pct-track{flex:1;background:var(--grey2);border-radius:20px;height:14px;overflow:hidden}
+.pct-fill{height:100%;border-radius:20px;transition:width 1s}
+.pct-val{width:38px;text-align:right;font-size:.88rem;font-weight:600;color:var(--grey3)}
+.cta-card{background:linear-gradient(135deg,var(--navy),var(--navy-light));border-radius:var(--radius);padding:28px;width:100%;max-width:780px;color:#fff;text-align:center;margin:16px 0}
+.cta-card h2{font-size:1.25rem;margin-bottom:12px}
+.cta-benefits{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:14px 0 20px}
+.cta-benefit{background:rgba(255,255,255,.12);border-radius:20px;padding:5px 14px;font-size:.82rem}
+.cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.disclaimer{background:#fff8e1;border-left:4px solid var(--gold);border-radius:6px;padding:12px 16px;font-size:.83rem;color:#7a6010;margin:10px 0;width:100%;max-width:780px}
+.save-reminder{background:#e8f4fd;border-left:4px solid #2980b9;border-radius:6px;padding:12px 16px;font-size:.85rem;color:#1a4a6e;margin:10px 0;width:100%;max-width:780px;display:flex;align-items:flex-start;gap:10px}
+.save-reminder strong{display:block;margin-bottom:3px}
+.full-width{grid-column:1/-1}
+.synergy-table{width:100%;border-collapse:collapse;margin-top:10px}
+.synergy-table th{background:var(--grey);color:var(--navy);font-size:.82rem;padding:8px 10px;text-align:left;border-bottom:2px solid var(--grey2)}
+.synergy-table td{padding:9px 10px;font-size:.85rem;border-bottom:1px solid var(--grey2);vertical-align:top}
+.synergy-table tr:last-child td{border-bottom:none}
+.action-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;width:100%;max-width:780px;margin:16px 0}
+.role-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.role-chip{padding:6px 16px;border-radius:20px;font-size:.83rem;font-weight:600;border:2px solid var(--navy);color:var(--navy);background:#fff}
+.role-chip.emerging{border-color:var(--gold);color:var(--gold)}
+.appreciation-card{background:linear-gradient(135deg,#f9f3e8,#fff8ed);border:1.5px solid var(--gold);border-radius:var(--radius);padding:22px;width:100%;max-width:780px;text-align:center;margin:10px 0}
+.appreciation-card h3{color:var(--navy);margin-bottom:8px;font-size:1.05rem}
+.appreciation-card p{color:#555;font-size:.9rem;margin-bottom:14px}
+</style>
+</head>
+<body>
+
+<!-- SCREEN 1: WELCOME -->
+<div class="screen active" id="screen-welcome">
+  <div class="logo-bar">
+	<div>
+   	 <a href="https://talentedgeasia.com/" style="text-decoration: none; color: inherit;">
+        <div class="logo-text">TalentEdge Asia</div>
+  	 </a>
+    	<div class="logo-sub">Leadership & Coaching Solutions</div>
+	</div>
+    <div class="badge">FREE ASSESSMENT</div>
+  </div>
+  <div class="card">
+    <h1>Understand Your Leadership Style in 5 Minutes</h1>
+    <p>This DISC Leadership Snapshot provides a quick overview of your leadership and communication style. Complete the assessment to receive your personalised report.</p>
+    <div class="form-group">
+      <label for="fname">Full Name <span style="color:#c0392b">*</span></label>
+      <input type="text" id="fname" placeholder="e.g. Sarah Lim">
+      <div class="err" id="err-name">Please enter your full name.</div>
+    </div>
+    <div class="consent-row">
+      <input type="checkbox" id="fconsent">
+      <label for="fconsent">I agree to receive my DISC assessment results and follow-up information from TalentEdge Asia.</label>
+    </div>
+    <div class="err" id="err-consent">Please provide your consent to proceed.</div>
+    <button class="btn btn-primary" onclick="startAssessment()" style="margin-top:6px;width:100%">Begin Assessment →</button>
+  </div>
+  <p style="font-size:.8rem;color:var(--grey3);max-width:680px;text-align:center">Your data is used solely for report generation, in compliance with Singapore PDPA principles.</p>
+</div>
+
+<!-- SCREEN 2: ASSESSMENT -->
+<div class="screen" id="screen-assess">
+  <div class="logo-bar">
+    <div><div class="logo-text">TalentEdge Asia</div><div class="logo-sub">DISC Leadership Snapshot</div></div>
+    <div class="badge" id="q-badge">Q1 of 10</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-label"><span id="q-label">Question 1 of 10</span><span id="q-pct">0% Complete</span></div>
+    <div class="progress-bar"><div class="progress-fill" id="prog-fill" style="width:0%"></div></div>
+  </div>
+  <div class="q-card">
+    <div class="q-num" id="q-num">QUESTION 1 OF 10</div>
+    <div class="q-text" id="q-text"></div>
+    <div class="options" id="q-options"></div>
+    <div class="q-nav">
+      <button class="btn btn-outline btn-sm" id="btn-back" onclick="prevQ()" style="display:none">← Back</button>
+      <button class="btn btn-primary btn-sm" id="btn-next" onclick="nextQ()" style="margin-left:auto">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- SCREEN 3: RESULTS -->
+<div class="screen" id="screen-results">
+  <div class="logo-bar" style="max-width:780px">
+    <div><div class="logo-text">TalentEdge Asia</div><div class="logo-sub">Your DISC Leadership Snapshot</div></div>
+    <div class="badge">YOUR REPORT</div>
+  </div>
+
+  <div class="save-reminder">
+    <span style="font-size:1.3rem">💾</span>
+    <div><strong>Please save your report now</strong>We do not store a copy of your assessment. Your report will not be available once you leave or close this page. Please download or print your report before exiting.</div>
+  </div>
+
+  <div class="results-header" id="results-header"></div>
+
+  <div class="disclaimer">
+    <strong>Assessment Disclaimer:</strong> This DISC Leadership Snapshot is an introductory assessment intended for personal development and awareness. It is not a comprehensive behavioural assessment. A full DISC assessment provides deeper analysis and greater accuracy.
+  </div>
+
+  <div class="results-grid" id="results-grid"></div>
+
+  <div class="cta-card">
+    <h2>Want a deeper and more accurate DISC profile?</h2>
+    <div class="cta-benefits">
+      <span class="cta-benefit">✔ Full Professional DISC Assessment</span>
+      <span class="cta-benefit">✔ Comprehensive Behavioural Report</span>
+      <span class="cta-benefit">✔ Leadership Coaching Insights</span>
+      <span class="cta-benefit">✔ Team Communication Strategies</span>
+      <span class="cta-benefit">✔ Workplace Effectiveness Recommendations</span>
+      <span class="cta-benefit">✔ One-to-One DISC Coaching Session</span>
+    </div>
+    <div class="cta-btns">
+      <a href="https://talentedgeasia.com/#contact" target="_blank" class="btn btn-gold">📅 Book a DISC Coaching Session</a>
+      <a href="https://talentedgeasia.com/disc-eq.html" target="_blank" class="btn" style="background:transparent;color:#fff;border:2px solid #fff;font-weight:700;padding:13px 32px;border-radius:8px;text-decoration:none">Learn More About Full DISC Assessment</a>
+    </div>
+  </div>
+
+  <div class="appreciation-card">
+    <h3>💬 Found This Assessment Helpful?</h3>
+    <p>If this DISC Leadership Snapshot has given you useful insights, we'd love to hear from you. Drop us a message — your feedback means a great deal to us.</p>
+    <a href="https://talentedgeasia.com/#contact" target="_blank" class="btn btn-gold" style="font-size:.9rem;padding:10px 24px">Send an Appreciation Message</a>
+  </div>
+
+  <div class="action-row">
+    <button class="btn btn-primary" onclick="downloadPDF()">⬇ Download PDF Report</button>
+    <button class="btn btn-outline" onclick="window.print()">🖨 Print Report</button>
+    <a href="https://talentedgeasia.com/#contact" target="_blank" class="btn btn-gold">📅 Book DISC Coaching Session</a>
+  </div>
+
+  <p style="font-size:.8rem;color:var(--grey3);text-align:center;margin-top:8px">⚠ Reminder: Download or print your report before leaving this page. No data is stored on our servers. &nbsp;|&nbsp; <a href="https://talentedgeasia.com/" target="_blank" style="color:var(--navy);font-weight:600;text-decoration:underline">Visit TalentEdge Asia</a></p>
+</div>
+
+<script>
+
+const QUESTIONS=[
+  {t:"When leading a project, I tend to:",opts:[{txt:"Set clear goals and push the team to achieve results quickly",d:"D"},{txt:"Inspire and motivate the team with enthusiasm and energy",d:"I"},{txt:"Ensure everyone feels supported and valued throughout",d:"S"},{txt:"Create structured plans and monitor every detail carefully",d:"C"}]},
+  {t:"When communicating at work, I am most likely to:",opts:[{txt:"Be direct and get straight to the point",d:"D"},{txt:"Be expressive and engage others with stories or humour",d:"I"},{txt:"Be calm, patient and thoughtful in my responses",d:"S"},{txt:"Be precise and back up my points with data or facts",d:"C"}]},
+  {t:"When making important decisions, I prefer to:",opts:[{txt:"Decide quickly and take action based on gut instinct",d:"D"},{txt:"Consult others and consider how the decision affects relationships",d:"I"},{txt:"Take my time and think through how it impacts the team",d:"S"},{txt:"Analyse all available information before committing",d:"C"}]},
+  {t:"In a team setting, my natural role tends to be:",opts:[{txt:"The driver who sets direction and keeps things moving",d:"D"},{txt:"The motivator who energises the group",d:"I"},{txt:"The supporter who makes sure everyone is heard and included",d:"S"},{txt:"The analyst who evaluates options and ensures quality",d:"C"}]},
+  {t:"When conflict arises at work, my first instinct is to:",opts:[{txt:"Address it head-on and resolve it decisively",d:"D"},{txt:"Diffuse tension with humour or optimism",d:"I"},{txt:"Seek harmony and find a solution everyone is comfortable with",d:"S"},{txt:"Investigate the root cause before proposing a resolution",d:"C"}]},
+  {t:"My typical work style is best described as:",opts:[{txt:"Fast-paced, results-focused and competitive",d:"D"},{txt:"Collaborative, spontaneous and relationship-driven",d:"I"},{txt:"Methodical, reliable and people-oriented",d:"S"},{txt:"Systematic, thorough and detail-oriented",d:"C"}]},
+  {t:"I feel most motivated at work when:",opts:[{txt:"I have autonomy and can achieve challenging goals",d:"D"},{txt:"I can collaborate, socialise and inspire others",d:"I"},{txt:"The environment is stable and my contributions are appreciated",d:"S"},{txt:"I can solve complex problems and produce high-quality work",d:"C"}]},
+  {t:"When my organisation faces significant change, I typically:",opts:[{txt:"Embrace it and look for ways to gain a competitive advantage",d:"D"},{txt:"Get excited and share the vision with others enthusiastically",d:"I"},{txt:"Need time to adjust and prefer gradual transition",d:"S"},{txt:"Evaluate the risks and ensure processes are clearly defined",d:"C"}]},
+  {t:"Others would describe my leadership approach as:",opts:[{txt:"Bold, decisive and results-oriented",d:"D"},{txt:"Inspiring, energetic and people-first",d:"I"},{txt:"Calm, supportive and trustworthy",d:"S"},{txt:"Precise, principled and analytically driven",d:"C"}]},
+  {t:"When giving feedback, I tend to:",opts:[{txt:"Be blunt and focus on what needs to improve immediately",d:"D"},{txt:"Frame feedback positively and encourage the person",d:"I"},{txt:"Deliver feedback gently and check how the person feels",d:"S"},{txt:"Provide detailed observations supported by specific examples",d:"C"}]},
+  {t:"When planning a new initiative, I focus most on:",opts:[{txt:"Speed of execution and achieving targets",d:"D"},{txt:"Building buy-in and getting the team excited",d:"I"},{txt:"Ensuring the team has the support they need to succeed",d:"S"},{txt:"Creating a detailed, well-researched implementation plan",d:"C"}]},
+  {t:"When I disagree with a colleague's approach, I:",opts:[{txt:"State my position clearly and push for my preferred solution",d:"D"},{txt:"Try to negotiate and find common ground through conversation",d:"I"},{txt:"Avoid direct confrontation and look for a compromise",d:"S"},{txt:"Prepare a logical argument with supporting evidence",d:"C"}]},
+  {t:"My preferred way of receiving recognition is:",opts:[{txt:"Public acknowledgement of my results and achievements",d:"D"},{txt:"Verbal praise and appreciation in front of the team",d:"I"},{txt:"Private and genuine thanks from those I work closely with",d:"S"},{txt:"Recognition for the quality and accuracy of my work",d:"C"}]},
+  {t:"Under pressure, I am most likely to:",opts:[{txt:"Intensify my focus and push harder to overcome obstacles",d:"D"},{txt:"Rally others and stay upbeat to keep morale high",d:"I"},{txt:"Remain steady and provide a calming influence for the team",d:"S"},{txt:"Slow down, review the details and find the best solution",d:"C"}]},
+  {t:"When joining a new team, I typically:",opts:[{txt:"Take charge quickly and establish my expectations",d:"D"},{txt:"Network enthusiastically and build relationships fast",d:"I"},{txt:"Observe carefully and integrate gradually at my own pace",d:"S"},{txt:"Study the systems and processes before taking action",d:"C"}]},
+  {t:"I believe the most important quality in a leader is:",opts:[{txt:"The ability to make tough decisions and drive results",d:"D"},{txt:"The ability to inspire and connect with people emotionally",d:"I"},{txt:"The ability to build trust and support team wellbeing",d:"S"},{txt:"The ability to think strategically and solve complex problems",d:"C"}]},
+  {t:"When reviewing my own performance, I tend to:",opts:[{txt:"Focus on whether I achieved my goals and targets",d:"D"},{txt:"Reflect on the quality of my relationships and team impact",d:"I"},{txt:"Consider whether I supported and contributed to team harmony",d:"S"},{txt:"Evaluate my accuracy, thoroughness and professional standards",d:"C"}]},
+  {t:"In meetings, my natural tendency is to:",opts:[{txt:"Take control of the agenda and drive decisions quickly",d:"D"},{txt:"Contribute ideas enthusiastically and energise the discussion",d:"I"},{txt:"Listen carefully and ensure quieter voices are heard",d:"S"},{txt:"Prepare thoroughly and ask questions to clarify details",d:"C"}]},
+  {t:"When a project encounters unexpected setbacks, I:",opts:[{txt:"Reassess the situation and quickly redirect the team",d:"D"},{txt:"Keep the team's spirits up and look for creative solutions",d:"I"},{txt:"Check in with team members and make sure morale is maintained",d:"S"},{txt:"Diagnose the problem systematically and revise the plan",d:"C"}]},
+  {t:"My approach to building professional relationships is to:",opts:[{txt:"Keep relationships professional and focused on results",d:"D"},{txt:"Invest time in socialising and developing genuine connections",d:"I"},{txt:"Build deep, loyal and long-lasting relationships over time",d:"S"},{txt:"Maintain respectful, structured and credibility-based relationships",d:"C"}]}
+];
+
+const DISC_INFO={
+  D:{name:"Dominance",color:"#e74c3c",emoji:"🔴",desc:"Results-focused, decisive, direct and competitive"},
+  I:{name:"Influence",color:"#f39c12",emoji:"🟡",desc:"Enthusiastic, persuasive, relationship-driven and optimistic"},
+  S:{name:"Steadiness",color:"#27ae60",emoji:"🟢",desc:"Patient, reliable, supportive and collaborative"},
+  C:{name:"Conscientiousness",color:"#2980b9",emoji:"🔵",desc:"Analytical, precise, detail-oriented and systematic"}
+};
+
+const CAREER_ROLES={
+  D:{core:["Leader","Executive","Business Owner","Entrepreneur","Managing Director","Sales Director"],emerging:["Digital Entrepreneur","Startup Founder","Growth Hacker"]},
+  I:{core:["Sales Leader","Marketing Manager","Business Development Manager","Coach","Trainer","Public Speaker"],emerging:["Content Creator","Community Manager","Personal Branding Specialist","Influencer Marketing Lead"]},
+  S:{core:["Mentor","People Manager","HR Manager","Operations Manager","Customer Success Manager","Learning & Development Specialist"],emerging:["Wellness Coach","Employee Experience Designer","Culture Strategist"]},
+  C:{core:["Analyst","Consultant","Project Manager","Quality Manager","Strategic Advisor","Subject Matter Expert"],emerging:["Data Strategist","UX Researcher","AI Prompt Engineer","Process Automation Specialist"]}
+};
+
+const REPORT={
+  D:{strengths:"You lead with confidence, clarity and a strong drive for results. Your ability to make quick decisions under pressure makes you an effective leader in high-stakes environments. You are naturally goal-oriented, setting ambitious targets and rallying others around a clear vision. Your directness and decisiveness help cut through ambiguity and move projects forward efficiently. You thrive when given autonomy and are not afraid to take bold action to achieve outcomes. Your competitive nature pushes both yourself and your team to perform at the highest level.",blindspots:"Your drive for results may sometimes overshadow the emotional needs of your team. You may come across as overly direct or impatient, particularly with those who prefer a more collaborative or deliberate pace. Delegating can be a challenge as you prefer to maintain control. There is a risk of making decisions too quickly without fully considering input from others. Learning to slow down, listen actively and build consensus will strengthen your effectiveness as a leader and improve team trust.",communication:"You communicate in a direct, concise and confident manner. You prefer to receive information that is brief, relevant and actionable. You value directness and respect leaders who communicate with clarity and purpose. In presentations, you focus on outcomes and key takeaways. You may occasionally need to soften your delivery to ensure that quieter or more sensitive team members feel heard and valued in discussions.",motivators:"You are motivated by challenge, achievement and the freedom to lead. You thrive in competitive environments where you can demonstrate your capability and make a visible impact. Recognition for your results, autonomy in decision-making and opportunities to advance are important to you. You are energised by fast-paced environments and meaningful goals that stretch your capabilities.",improvement:"Developing active listening skills and emotional intelligence will significantly enhance your leadership impact. Practice inviting input before concluding discussions. Build deeper relationships with your team by showing genuine interest in their development. Consider the long-term people implications of your decisions. Seeking feedback regularly and creating psychological safety within your team will elevate your leadership from good to exceptional.",teamtips:"Provide your team with clear goals and measurable outcomes. Give capable team members autonomy and hold them accountable to results. Recognise performance openly and address underperformance directly but constructively. Balance your high-performance expectations with genuine care for team wellbeing. Pair your drive with empathy to build a team culture that is both results-focused and resilient.",coaching:"Consider executive leadership coaching to strengthen influence, stakeholder management and emotional intelligence. A full DISC assessment will provide deeper insight into your behavioural tendencies and help you lead with greater versatility.",leadtag:"Leadership / Management Potential"},
+  I:{strengths:"You lead through energy, enthusiasm and the ability to inspire those around you. Your natural charisma and optimism create a positive team environment and make you highly effective at rallying people around a shared vision. You excel at building relationships, networking and persuading others to embrace new ideas. Your creativity and spontaneity bring innovation to your team. You are skilled at reading social dynamics and adapting your communication style to connect with diverse personalities.",blindspots:"Your enthusiasm may sometimes lead you to over-promise or lose focus on follow-through. You may prioritise relationships and harmony over difficult but necessary conversations. Detail-oriented tasks and structured routines can be draining for you. There is a risk of making decisions based on emotion or optimism rather than data. Developing greater discipline around planning, accountability and follow-up will enhance your professional effectiveness and credibility.",communication:"You communicate with warmth, energy and expressiveness. You are a natural storyteller who engages audiences through humour, anecdote and passion. You prefer conversations that are upbeat, collaborative and relationship-building. You may occasionally need to add more structure and evidence to your communication, particularly in formal or analytical environments. Adapting your style to suit more reserved or data-driven colleagues will expand your influence.",motivators:"You are motivated by social connection, recognition and the opportunity to inspire others. You thrive in environments where collaboration, creativity and enthusiasm are celebrated. Public acknowledgement of your contributions and the chance to work with people who share your energy are important to you. You are energised by new opportunities, variety and the ability to make a positive difference.",improvement:"Building stronger follow-through habits and attention to detail will significantly strengthen your professional reputation. Practice active listening rather than rushing to share your own ideas. Develop greater comfort with structured accountability and data-driven decision-making. Learning to have direct and difficult conversations without fear of disapproval will make you a more complete and credible leader.",teamtips:"Create an environment where your team feels valued, heard and appreciated. Recognise both results and effort openly and regularly. Use your natural enthusiasm to maintain morale during challenging periods. Balance your people-focus with clear expectations and accountability. Pair your relational strengths with structured goal-setting to ensure your team's enthusiasm translates into consistent performance.",coaching:"Consider communication and presentation coaching to maximise your engagement and relationship-building impact. A full DISC assessment will deepen your understanding of how your style influences others and how to build even greater leadership versatility.",leadtag:"Sales / Relationship Building"},
+  S:{strengths:"You lead with consistency, empathy and a genuine commitment to team wellbeing. Your calm, patient and dependable nature creates a stable and psychologically safe environment where people feel comfortable contributing. You are an excellent listener who takes time to understand the needs of your team before acting. Your loyalty and reliability make you a trusted leader who team members turn to for support. You excel at building long-term, meaningful relationships and maintaining team cohesion during periods of change.",blindspots:"Your preference for harmony may cause you to avoid difficult conversations or delay decisions that could disrupt the team. You may struggle with asserting your own needs or opinions, particularly in competitive environments. Your inclination to support others can lead to over-commitment and burnout. Learning to set healthy boundaries, embrace constructive conflict and communicate your expectations more directly will strengthen your leadership presence and impact.",communication:"You communicate thoughtfully, patiently and with genuine care for the person you are speaking with. You prefer conversations that are personal, sincere and respectful. You take time to consider your words and ensure your message lands well. You may occasionally need to be more direct and assertive in your communication, particularly when addressing performance issues or leading in high-pressure environments where decisiveness is required.",motivators:"You are motivated by a sense of belonging, appreciation and the knowledge that your contributions matter to the team. You thrive in stable, collaborative environments where trust and loyalty are valued. Being acknowledged privately and sincerely for your support and efforts is important to you. You are energised by meaningful relationships, a harmonious team culture and the opportunity to make a genuine difference in the lives of those around you.",improvement:"Building confidence in assertiveness and conflict management will significantly expand your leadership effectiveness. Practice voicing your opinions and recommendations clearly, even when they may be unpopular. Develop comfort with leading through change and uncertainty. Strengthening your ability to hold team members accountable while maintaining your natural warmth will make you a more impactful and respected leader in diverse and dynamic environments.",teamtips:"Create a team environment built on trust, inclusion and mutual respect. Check in regularly with team members on both their professional goals and personal wellbeing. Ensure that every voice is heard in discussions and decisions. Balance your supportive nature with clear performance expectations and constructive feedback. Your ability to build deep team loyalty is one of your most valuable leadership assets.",coaching:"Consider team leadership coaching to build confidence in managing change, conflict and assertive communication. A full DISC assessment will provide detailed insight into your behavioural preferences and help you lead with greater confidence and impact.",leadtag:"Team Collaboration / Support Functions"},
+  C:{strengths:"You lead through expertise, precision and a commitment to excellence. Your analytical mindset and attention to detail ensure that decisions are well-informed and solutions are thoroughly evaluated. You bring rigour, structure and high professional standards to everything you do. You are skilled at identifying risks, developing comprehensive plans and holding yourself and others to a high standard of quality. Your principled approach and depth of knowledge earn you significant credibility and respect.",blindspots:"Your pursuit of perfection may slow decision-making in environments where speed and agility are required. You may find it challenging to delegate tasks to others who do not meet your exacting standards. There is a risk of over-analysing or becoming paralysed by the need for complete information. Building stronger interpersonal connections and learning to communicate technical information in a more accessible, people-centred way will enhance your leadership influence significantly.",communication:"You communicate with precision, logic and careful preparation. You prefer to present well-researched arguments supported by data and evidence. You value accuracy and clarity above all in professional communication. You may occasionally need to simplify your messaging to ensure broader audiences can engage with your ideas. Developing greater warmth and relatability in your communication style will strengthen your ability to connect with and influence people across all levels of the organisation.",motivators:"You are motivated by quality, accuracy and the opportunity to solve complex problems. You thrive in environments where high standards are respected and expertise is valued. Being given time and resources to research and plan thoroughly is important to you. You are energised by challenging intellectual problems, clear processes and the satisfaction of producing work of exceptional quality.",improvement:"Developing greater comfort with ambiguity and faster decision-making will strengthen your strategic effectiveness. Practice making decisions with 80% of the information you ideally want, rather than waiting for complete certainty. Build stronger relational skills and invest in getting to know your team beyond their technical performance. Communicating your thought process more openly and inviting diverse input will improve collaboration and help you lead more inclusively.",teamtips:"Establish clear processes, quality standards and expectations for your team. Provide detailed briefs and structured feedback that team members can act on concretely. Balance your high standards with recognition of effort and progress. Create space for team members to ask questions and raise concerns without fear of judgment. Pairing your analytical strength with genuine investment in team relationships will elevate your leadership from expert to inspirational.",coaching:"Consider strategic leadership coaching to improve decision-making speed, stakeholder influence and interpersonal effectiveness. A full DISC assessment will provide deeper insight into your behavioural profile and help you lead with greater versatility and impact.",leadtag:"Analysis / Process Improvement"}
+};
+
+const COMBOS={
+  "D/I":"Your D/I combination makes you a powerful and charismatic leader. You drive results while inspiring those around you. You communicate with confidence and enthusiasm, making you effective in roles that require both achievement and influence. You lead decisively but also know how to bring people along on the journey.",
+  "D/C":"Your D/C combination creates a leader who is both results-driven and analytically rigorous. You make bold decisions but back them with solid data and careful thought. You set high standards for yourself and your team and are particularly effective in complex, high-stakes environments.",
+  "D/S":"Your D/S combination balances ambition with loyalty. You drive for results while maintaining a genuine care for your team's wellbeing. You are a strong, dependable leader who sets clear expectations and also provides steady support for those around you.",
+  "I/D":"Your I/D combination makes you an energetic, results-oriented leader with exceptional people skills. You inspire action through enthusiasm and lead with purpose. You are highly effective at mobilising teams and creating momentum toward ambitious goals.",
+  "I/S":"Your I/S combination makes you a warm, relationship-centred leader. You inspire and support in equal measure, creating a team culture where people feel both motivated and psychologically safe. You are highly effective at building collaborative and loyal teams.",
+  "I/C":"Your I/C combination creates a leader who is both engaging and credible. You communicate with enthusiasm but also ensure your ideas are well-supported by data and evidence. You bring creativity and rigour together, making you effective in roles that require both innovation and analysis.",
+  "S/D":"Your S/D combination makes you a steady and purposeful leader. You are patient and supportive by nature but can step up with decisiveness when the situation demands it. You build trust through reliability and deliver results through calm, consistent leadership.",
+  "S/I":"Your S/I combination creates a compassionate and engaging leader. You build deep relationships and inspire loyalty through genuine care and infectious positivity. You are highly effective at creating inclusive team environments where everyone feels valued.",
+  "S/C":"Your S/C combination makes you a thoughtful, principled leader who combines empathy with analytical precision. You take decisions carefully, consider people implications and maintain high professional standards. You are trusted for both your competence and your integrity.",
+  "C/D":"Your C/D combination creates a strategic and decisive leader. You think deeply before acting but are not afraid to make bold decisions when the analysis supports it. You set high standards, drive accountability and lead with intellectual authority.",
+  "C/I":"Your C/I combination makes you a credible and engaging leader. You bring rigour and warmth together in a way that is rare and highly valued. You communicate complex ideas clearly and connect with diverse audiences effectively, making you a compelling and trustworthy leader.",
+  "C/S":"Your C/S combination creates a precise and people-centred leader. You combine analytical depth with genuine care for your team. You build trust through expertise, consistency and integrity, and are highly effective in environments that value both quality and collaboration."
+};
+
+const SYNERGY={
+  D:{working:"Be direct and concise. Respect their time and get to the point quickly. Focus on outcomes and results. Give them autonomy and avoid micromanaging. Challenge them constructively and acknowledge their achievements."},
+  I:{working:"Engage with enthusiasm and warmth. Show genuine interest in them as a person. Be flexible and open to creative ideas. Provide public recognition and celebrate their contributions. Allow space for social interaction and collaboration."},
+  S:{working:"Be patient, sincere and consistent. Take time to build trust before expecting action. Avoid sudden changes without explanation. Acknowledge their contributions privately and genuinely. Provide clear, stable expectations and check in regularly."},
+  C:{working:"Be precise, logical and well-prepared. Provide data and evidence to support your points. Respect their need for detail and thoroughness. Avoid rushing them to decisions. Acknowledge the quality of their work and give specific, constructive feedback."}
+};
+
+let userName="",selected=[],answers=[],scores={D:0,I:0,S:0,C:0},primary="",secondary="",pctScores={},radarChart=null;
+
+function shuffle(a){let b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]]}return b}
+function fmtDate(){return new Date().toLocaleDateString('en-SG',{day:'numeric',month:'long',year:'numeric'})}
+function show(id){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo(0,0)}
+
+function startAssessment(){
+  const n=document.getElementById('fname').value.trim();
+  const c=document.getElementById('fconsent').checked;
+  let ok=true;
+  document.getElementById('err-name').style.display='none';
+  document.getElementById('err-consent').style.display='none';
+  if(!n){document.getElementById('err-name').style.display='block';ok=false}
+  if(!c){document.getElementById('err-consent').style.display='block';ok=false}
+  if(!ok)return;
+  userName=n;
+  selected=shuffle(QUESTIONS).slice(0,10).map(q=>({...q,opts:shuffle(q.opts)}));
+  answers=new Array(10).fill(null);
+  scores={D:0,I:0,S:0,C:0};
+  renderQ(0);
+  show('screen-assess');
+}
+
+let curQ=0;
+function renderQ(i){
+  curQ=i;
+  const q=selected[i];
+  const pct=Math.round((i/10)*100);
+  document.getElementById('q-label').textContent=`Question ${i+1} of 10`;
+  document.getElementById('q-pct').textContent=`${pct}% Complete`;
+  document.getElementById('prog-fill').style.width=pct+'%';
+  document.getElementById('q-badge').textContent=`Q${i+1} of 10`;
+  document.getElementById('q-num').textContent=`QUESTION ${i+1} OF 10`;
+  document.getElementById('q-text').textContent=q.t;
+  const optEl=document.getElementById('q-options');
+  optEl.innerHTML='';
+  ['A','B','C','D'].forEach((l,idx)=>{
+    const div=document.createElement('div');
+    div.className='opt'+(answers[i]===idx?' selected':'');
+    div.onclick=()=>selectOpt(idx);
+    div.innerHTML=`<div class="opt-letter">${l}</div><div class="opt-text">${q.opts[idx].txt}</div>`;
+    optEl.appendChild(div);
+  });
+  document.getElementById('btn-back').style.display=i>0?'':'none';
+  document.getElementById('btn-next').textContent=i===9?'Submit →':'Next →';
+}
+
+function selectOpt(idx){
+  answers[curQ]=idx;
+  document.querySelectorAll('.opt').forEach((el,i)=>el.classList.toggle('selected',i===idx));
+}
+function nextQ(){if(answers[curQ]===null){alert('Please select an answer before continuing.');return}if(curQ<9)renderQ(curQ+1);else calcResults()}
+function prevQ(){if(curQ>0)renderQ(curQ-1)}
+
+function calcResults(){
+  scores={D:0,I:0,S:0,C:0};
+  selected.forEach((q,i)=>{if(answers[i]!==null)scores[q.opts[answers[i]].d]++});
+  const total=Object.values(scores).reduce((a,b)=>a+b,0);
+  pctScores={};
+  Object.keys(scores).forEach(k=>pctScores[k]=Math.round((scores[k]/total)*100));
+  const diff=100-Object.values(pctScores).reduce((a,b)=>a+b,0);
+  const maxKey=Object.keys(pctScores).reduce((a,b,i,arr)=>pctScores[a]>pctScores[b]?a:b);
+  pctScores[maxKey]+=diff;
+  const sorted=Object.entries(pctScores).sort((a,b)=>b[1]-a[1]);
+  primary=sorted[0][0];secondary=sorted[1][0];
+  buildResults();
+  show('screen-results');
+}
+
+function getRoles(){
+  const pDiff=Math.abs(pctScores[primary]-pctScores[secondary]);
+  let coreRoles=[...CAREER_ROLES[primary].core];
+  let emergingRoles=[...CAREER_ROLES[primary].emerging];
+  if(pDiff<=10){
+    CAREER_ROLES[secondary].core.forEach(r=>{if(!coreRoles.includes(r))coreRoles.push(r)});
+    CAREER_ROLES[secondary].emerging.forEach(r=>{if(!emergingRoles.includes(r))emergingRoles.push(r)});
+  }
+  return{core:coreRoles,emerging:emergingRoles,isDual:pDiff<=10};
+}
+
+function buildResults(){
+  const P=REPORT[primary];
+  const combo=COMBOS[`${primary}/${secondary}`]||"Your unique DISC combination reflects a versatile and adaptive leadership style with complementary strengths.";
+  const roles=getRoles();
+
+  document.getElementById('results-header').innerHTML=`
+    <div>
+      <h2>DISC Leadership Snapshot</h2>
+      <p>Participant: <strong>${userName}</strong> &nbsp;|&nbsp; Date: ${fmtDate()}</p>
+    </div>
+    <div class="disc-badges">
+      <div class="disc-badge badge-${primary}">${DISC_INFO[primary].emoji} Primary: ${DISC_INFO[primary].name}</div>
+      <div class="disc-badge badge-${secondary}">${DISC_INFO[secondary].emoji} Secondary: ${DISC_INFO[secondary].name}</div>
+    </div>`;
+
+  const grid=document.getElementById('results-grid');
+  grid.innerHTML='';
+
+  const chartCard=document.createElement('div');
+  chartCard.className='section-card';
+  chartCard.innerHTML=`<h3>📊 DISC Profile Breakdown</h3><div class="chart-wrap"><canvas id="radarChart"></canvas></div>`;
+  grid.appendChild(chartCard);
+
+  const barCard=document.createElement('div');
+  barCard.className='section-card';
+  barCard.innerHTML=`<h3>📈 Score Distribution</h3>
+    <div class="pct-bars">${Object.entries(pctScores).map(([k,v])=>`
+    <div class="pct-row">
+      <div class="pct-label" style="color:${DISC_INFO[k].color}">${k}</div>
+      <div class="pct-track"><div class="pct-fill" style="width:${v}%;background:${DISC_INFO[k].color}"></div></div>
+      <div class="pct-val">${v}%</div>
+    </div>`).join('')}</div>
+    <div style="margin-top:14px">${Object.entries(DISC_INFO).map(([k,v])=>`<div style="margin-bottom:4px;font-size:.82rem"><strong style="color:${v.color}">${k} — ${v.name}:</strong> ${v.desc}</div>`).join('')}</div>`;
+  grid.appendChild(barCard);
+
+  addCard(grid,'full-width','🔗 DISC Combination Analysis',`<p><strong>${DISC_INFO[primary].name} / ${DISC_INFO[secondary].name}</strong></p><p>${combo}</p>`);
+
+  const dualNote=roles.isDual?`<p style="font-size:.83rem;color:var(--grey3);margin-bottom:10px">Your ${DISC_INFO[primary].name} and ${DISC_INFO[secondary].name} scores are close, reflecting a dual-dominant profile. Roles from both styles are shown.</p>`:'';
+  addCard(grid,'full-width','🎯 Suggested Career Paths & Roles',`
+    <p style="margin-bottom:12px">We hope that this report is just one of many steps that you will take to become a better:</p>
+    ${dualNote}
+    <div style="margin-bottom:8px;font-size:.85rem;font-weight:600;color:var(--navy)">Core Roles</div>
+    <div class="role-chips">${roles.core.map(r=>`<span class="role-chip">★ ${r}</span>`).join('')}</div>
+    <div style="margin:12px 0 8px;font-size:.85rem;font-weight:600;color:var(--gold)">Emerging & Future-Ready Roles</div>
+    <div class="role-chips">${roles.emerging.map(r=>`<span class="role-chip emerging">⚡ ${r}</span>`).join('')}</div>`);
+
+  addCard(grid,'','💪 Leadership Strengths',`<p>${P.strengths}</p>`);
+  addCard(grid,'','⚠ Potential Blind Spots',`<p>${P.blindspots}</p>`);
+  addCard(grid,'','💬 Communication Style',`<p>${P.communication}</p>`);
+  addCard(grid,'','🎯 Workplace Motivators',`<p>${P.motivators}</p>`);
+  addCard(grid,'','📈 Areas for Improvement',`<p>${P.improvement}</p>`);
+  addCard(grid,'','🤝 Team Collaboration Tips',`<p>${P.teamtips}</p>`);
+
+  addCard(grid,'full-width','⚖ Conflict Resolution Guidance',`<p>As a <strong>${DISC_INFO[primary].name}</strong> style leader, here is how to navigate workplace conflict effectively:</p><ul style="margin-top:10px">
+    <li><strong>Managing disagreements:</strong> ${primary==='D'?'Address conflicts directly and focus on resolution. Ensure your directness does not become aggression.':primary==='I'?'Use your natural warmth and humour to de-escalate tension. Ensure emotional engagement leads to resolution, not avoidance.':primary==='S'?'Seek consensus and ensure all parties feel heard. Be willing to voice your own concerns clearly, even when it feels uncomfortable.':'Analyse the root cause before engaging. Ensure your logical framing does not come across as dismissive of others\' emotions.'}</li>
+    <li><strong>Giving feedback:</strong> ${primary==='D'?'Be direct and specific. Balance criticism with acknowledgement of strengths.':primary==='I'?'Frame feedback positively and focus on encouragement alongside improvement areas.':primary==='S'?'Deliver feedback with empathy. Ensure you are honest even when it requires difficult conversations.':'Provide detailed, evidence-based feedback. Ensure it is delivered with warmth and is actionable.'}</li>
+    <li><strong>Receiving feedback:</strong> ${primary==='D'?'Resist the urge to become defensive. Listen fully before responding and consider the perspective offered.':primary==='I'?'Separate your emotional response from the content of the feedback. Focus on specific improvement actions.':primary==='S'?'Receive feedback graciously. Ensure you act on it rather than simply accepting it to avoid conflict.':'Welcome feedback as additional data. Ensure you do not over-analyse or dismiss feedback that challenges your approach.'}</li>
+    <li><strong>Building stronger team relationships:</strong> ${primary==='D'?'Invest time in understanding your team members as individuals, not just performers.':primary==='I'?'Follow through on commitments to your team. Reliability strengthens the relationships you work so hard to build.':primary==='S'?'Share your own perspectives and needs more openly. Mutual vulnerability deepens team trust.':'Invest in informal relationship-building. Not every interaction needs to be structured or professional.'}</li>
+    </ul>`);
+
+  const syn=Object.entries(SYNERGY).map(([k,v])=>`<tr><td><strong style="color:${DISC_INFO[k].color}">${k} — ${DISC_INFO[k].name}</strong></td><td>${v.working}</td></tr>`).join('');
+  addCard(grid,'full-width','🌐 Team Synergy — Working with All DISC Styles',`<table class="synergy-table"><thead><tr><th>DISC Style</th><th>How to Work Effectively</th></tr></thead><tbody>${syn}</tbody></table>`);
+
+  addCard(grid,'full-width','🎓 Professional Development Recommendations',`<p>${P.coaching}</p><div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:10px">
+    <a href="https://talentedgeasia.com/#contact" target="_blank" class="btn btn-primary btn-sm">📅 Book a Coaching Session</a>
+    <a href="https://talentedgeasia.com/disc-eq.html" target="_blank" class="btn btn-outline btn-sm">Learn More About Full DISC</a></div>`);
+
+  setTimeout(()=>{
+    const ctx=document.getElementById('radarChart');
+    if(!ctx)return;
+    if(radarChart)radarChart.destroy();
+    radarChart=new Chart(ctx,{type:'radar',data:{labels:['Dominance','Influence','Steadiness','Conscientiousness'],datasets:[{label:'Your DISC Profile',data:[pctScores.D,pctScores.I,pctScores.S,pctScores.C],backgroundColor:'rgba(26,46,90,0.15)',borderColor:'#1a2e5a',borderWidth:2,pointBackgroundColor:['#e74c3c','#f39c12','#27ae60','#2980b9'],pointRadius:6}]},options:{responsive:true,maintainAspectRatio:false,scales:{r:{min:0,max:60,ticks:{stepSize:20,font:{size:9}},pointLabels:{font:{size:10}}}},plugins:{legend:{display:false}}}});
+  },100);
+}
+
+function addCard(parent,extraClass,title,content){
+  const div=document.createElement('div');
+  div.className='section-card'+(extraClass?' '+extraClass:'');
+  const icon=title.split(' ')[0];
+  const heading=title.split(' ').slice(1).join(' ');
+  div.innerHTML=`<h3>${icon} ${heading}</h3>${content}`;
+  parent.appendChild(div);
+}
+
+function downloadPDF(){
+  const {jsPDF}=window.jspdf;
+  const doc=new jsPDF({orientation:'portrait',unit:'mm',format:'a4'});
+  const navy=[26,46,90],gold=[200,160,74],grey=[244,246,249],white=[255,255,255];
+  const W=210,M=18;let y=0,pageNum=1;
+
+  function hdr(){
+    doc.setFillColor(...navy);doc.rect(0,0,W,28,'F');
+    doc.setTextColor(...white);
+    doc.setFont('helvetica','bold');doc.setFontSize(15);
+    doc.text('TalentEdge Asia',M,11);
+    doc.setFont('helvetica','normal');doc.setFontSize(9);
+    doc.text('DISC Leadership Snapshot',M,18);
+    doc.setFontSize(8);doc.text('https://talentedgeasia.com/',W-M,18,{align:'right'});
+    y=36;
+  }
+
+  function ftr(){
+    doc.setFillColor(...navy);doc.rect(0,284,W,13,'F');
+    doc.setTextColor(...white);doc.setFontSize(7.5);doc.setFont('helvetica','normal');
+    doc.text('Interested in a comprehensive DISC assessment and coaching session? Visit https://talentedgeasia.com/',M,290);
+    doc.text(`Page ${pageNum}`,W-M,290,{align:'right'});
+  }
+
+  function newPage(){
+    ftr();doc.addPage();pageNum++;hdr();
+  }
+
+  function checkY(needed){if(y+needed>278)newPage()}
+
+  function sectionTitle(txt){
+    checkY(14);
+    doc.setFillColor(...grey);doc.rect(M,y,W-2*M,8,'F');
+    doc.setTextColor(...navy);doc.setFontSize(9.5);doc.setFont('helvetica','bold');
+    doc.text(txt,M+3,y+5.5);y+=12;
+  }
+
+  function bodyText(txt,indent=0){
+    doc.setTextColor(55,55,55);doc.setFontSize(8.5);doc.setFont('helvetica','normal');
+    const lines=doc.splitTextToSize(txt,W-2*M-indent);
+    lines.forEach(l=>{checkY(5);doc.text(l,M+indent,y);y+=5});y+=2;
+  }
+
+  function bulletPoint(label,txt){
+    checkY(6);
+    doc.setTextColor(...navy);doc.setFontSize(8.5);doc.setFont('helvetica','bold');
+    doc.text(`• ${label}:`,M+2,y);
+    doc.setFont('helvetica','normal');doc.setTextColor(55,55,55);
+    const lines=doc.splitTextToSize(txt,W-2*M-10);
+    lines.forEach((l,i)=>{checkY(5);doc.text(l,M+10,y+(i===0?0:0));if(i===0)y+=5});
+    if(lines.length>1)lines.slice(1).forEach(l=>{checkY(5);doc.text(l,M+10,y);y+=5});
+    y+=2;
+  }
+
+  const P=REPORT[primary];
+  const roles=getRoles();
+  const combo=COMBOS[`${primary}/${secondary}`]||"Your unique DISC combination reflects a versatile and adaptive leadership style.";
+  const dcols={D:[231,76,60],I:[243,156,18],S:[39,174,96],C:[41,128,185]};
+
+  // PAGE 1
+  hdr();
+  y+=2;
+  doc.setTextColor(...navy);doc.setFontSize(19);doc.setFont('helvetica','bold');
+  doc.text('DISC Leadership Snapshot Report',M,y);y+=9;
+  doc.setFontSize(10);doc.setFont('helvetica','normal');doc.setTextColor(70,70,70);
+  doc.text(`Participant: ${userName}`,M,y);y+=6;
+  doc.text(`Assessment Date: ${fmtDate()}`,M,y);y+=12;
+
+  const sorted2=Object.entries(pctScores).sort((a,b)=>b[1]-a[1]);
+  sorted2.forEach(([k,v],i)=>{
+    const bx=M+i*46;
+    doc.setFillColor(...dcols[k]);doc.roundedRect(bx,y,42,15,3,3,'F');
+    doc.setTextColor(...white);doc.setFontSize(8.5);doc.setFont('helvetica','bold');
+    doc.text(DISC_INFO[k].name,bx+21,y+6.5,{align:'center'});
+    doc.setFontSize(9);doc.text(`${v}%`,bx+21,y+12,{align:'center'});
+  });y+=22;
+
+  doc.setFillColor(...dcols[primary]);doc.roundedRect(M,y,W-2*M,11,3,3,'F');
+  doc.setTextColor(...white);doc.setFontSize(9.5);doc.setFont('helvetica','bold');
+  doc.text(`Primary: ${DISC_INFO[primary].name} (${primary})   |   Secondary: ${DISC_INFO[secondary].name} (${secondary})`,M+4,y+7.5);y+=17;
+
+  sectionTitle('DISC Combination Analysis');
+  bodyText(`${DISC_INFO[primary].name} / ${DISC_INFO[secondary].name}`);
+  bodyText(combo);
+
+  sectionTitle('Suggested Career Paths & Roles');
+  bodyText('We hope that this report is just one of many steps that you will take to become a better:');
+  doc.setFontSize(8.5);doc.setFont('helvetica','bold');doc.setTextColor(...navy);
+  doc.text('Core Roles:',M+2,y);y+=6;
+  doc.setFont('helvetica','normal');doc.setTextColor(55,55,55);
+  bodyText(roles.core.map(r=>`★ ${r}`).join('   '));
+  doc.setFontSize(8.5);doc.setFont('helvetica','bold');doc.setTextColor(...gold);
+  checkY(6);doc.text('Emerging & Future-Ready Roles:',M+2,y);y+=6;
+  doc.setFont('helvetica','normal');doc.setTextColor(55,55,55);
+  bodyText(roles.emerging.map(r=>`⚡ ${r}`).join('   '));
+
+  sectionTitle('Leadership Strengths');bodyText(P.strengths);
+  ftr();
+
+  // PAGE 2
+  newPage();
+  sectionTitle('Potential Blind Spots');bodyText(P.blindspots);
+  sectionTitle('Communication Style');bodyText(P.communication);
+  sectionTitle('Workplace Motivators');bodyText(P.motivators);
+  sectionTitle('Areas for Improvement');bodyText(P.improvement);
+  sectionTitle('Team Collaboration Tips');bodyText(P.teamtips);
+  ftr();
+
+  // PAGE 3
+  newPage();
+  sectionTitle('Conflict Resolution Guidance');
+  bodyText(`As a ${DISC_INFO[primary].name} style leader, here is how to navigate workplace conflict effectively:`);
+  const crData={
+    D:{mgmt:'Address conflicts directly and focus on resolution. Ensure your directness does not become aggression.',give:'Be direct and specific. Balance criticism with acknowledgement of strengths.',recv:'Resist the urge to become defensive. Listen fully before responding.',team:'Invest time in understanding your team members as individuals, not just performers.'},
+    I:{mgmt:'Use your natural warmth and humour to de-escalate tension. Ensure emotional engagement leads to resolution.',give:'Frame feedback positively and focus on encouragement alongside improvement areas.',recv:'Separate your emotional response from the feedback. Focus on specific improvement actions.',team:'Follow through on commitments to your team. Reliability strengthens the relationships you build.'},
+    S:{mgmt:'Seek consensus and ensure all parties feel heard. Be willing to voice your own concerns clearly.',give:'Deliver feedback with empathy. Ensure you are honest even when it requires difficult conversations.',recv:'Receive feedback graciously. Ensure you act on it rather than simply accepting it to avoid conflict.',team:'Share your own perspectives and needs more openly. Mutual vulnerability deepens team trust.'},
+    C:{mgmt:'Analyse the root cause before engaging. Ensure your logical framing does not dismiss others\' emotions.',give:'Provide detailed, evidence-based feedback. Ensure it is delivered with warmth and is actionable.',recv:'Welcome feedback as additional data. Do not over-analyse or dismiss feedback that challenges you.',team:'Invest in informal relationship-building. Not every interaction needs to be structured or professional.'}
+  };
+  bulletPoint('Managing disagreements',crData[primary].mgmt);
+  bulletPoint('Giving feedback',crData[primary].give);
+  bulletPoint('Receiving feedback',crData[primary].recv);
+  bulletPoint('Building stronger team relationships',crData[primary].team);
+
+  sectionTitle('Team Synergy — Working with All DISC Styles');
+  Object.entries(SYNERGY).forEach(([k,v])=>{
+    checkY(12);
+    doc.setFontSize(9);doc.setFont('helvetica','bold');doc.setTextColor(...dcols[k]);
+    doc.text(`${k} — ${DISC_INFO[k].name}`,M,y);y+=5;
+    bodyText(v.working);
+  });
+  ftr();
+
+  // PAGE 4
+  newPage();
+  sectionTitle('Professional Development Recommendations');bodyText(P.coaching);
+  y+=4;
+
+  checkY(40);
+  doc.setFillColor(...navy);doc.rect(M,y,W-2*M,38,'F');
+  doc.setTextColor(...white);doc.setFontSize(12);doc.setFont('helvetica','bold');
+  doc.text('Want a deeper and more accurate DISC profile?',W/2,y+9,{align:'center'});
+  const benefits=['Full Professional DISC Assessment','Comprehensive Behavioural Report','Leadership Coaching Insights','One-to-One DISC Coaching Session'];
+  doc.setFontSize(8);doc.setFont('helvetica','normal');
+  benefits.forEach((b,i)=>{const col=i<2?M+4:M+88;const row=i%2;doc.text(`✔ ${b}`,col,y+18+row*6)});
+  doc.setFontSize(9.5);doc.setFont('helvetica','bold');doc.setTextColor(...gold);
+  doc.text('Book your coaching session at: https://talentedgeasia.com/#contact',W/2,y+33,{align:'center'});
+  y+=44;
+
+  checkY(22);
+  doc.setFillColor(255,248,225);doc.rect(M,y,W-2*M,20,'F');
+  doc.setTextColor(122,96,16);doc.setFontSize(7.5);doc.setFont('helvetica','italic');
+  const disc='Assessment Disclaimer: This DISC Leadership Snapshot is an introductory assessment intended for personal development and awareness. It is not a comprehensive behavioural assessment. A full DISC assessment provides deeper analysis and greater accuracy.';
+  doc.splitTextToSize(disc,W-2*M-4).forEach((l,i)=>{doc.text(l,M+2,y+5+i*4.5)});
+  ftr();
+
+  doc.save(`DISC_Leadership_Snapshot_${userName.replace(/\s+/g,'_')}.pdf`);
+}
+</script>
+</body>
+</html>

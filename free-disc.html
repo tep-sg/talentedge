@@ -11,6 +11,15 @@
 
 <meta name="robots" content="index, follow">
 
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4EKH4P377P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4EKH4P377P');
+</script>
+	
 <meta property="og:title" content="Free DISC Leadership Assessment | TalentEdge Asia">
 <meta property="og:description" content="Discover your behavioral leadership style in 5 minutes with our free DISC Leadership Snapshot. Get instant insights today.">
 <meta property="og:url" content="https://talentedgeasia.com/free-disc.html">
@@ -363,6 +372,7 @@ function startAssessment(){
   scores={D:0,I:0,S:0,C:0};
   renderQ(0);
   show('screen-assess');
+  gtag('event', 'assessment_started', { event_category: 'DISC Assessment', event_label: 'Free DISC' });
 }
 
 let curQ=0;
@@ -409,6 +419,7 @@ function calcResults(){
   primary=sorted[0][0];secondary=sorted[1][0];
   buildResults();
   show('screen-results');
+  gtag('event', 'assessment_completed', { event_category: 'DISC Assessment', event_label: primary, value: 1 });
 }
 
 function getRoles(){
@@ -507,6 +518,7 @@ function addCard(parent,extraClass,title,content){
 }
 
 function downloadPDF(){
+  gtag('event', 'pdf_downloaded', { event_category: 'DISC Assessment', event_label: primary });
   const {jsPDF}=window.jspdf;
   const doc=new jsPDF({orientation:'portrait',unit:'mm',format:'a4'});
   const navy=[26,46,90],gold=[200,160,74],grey=[244,246,249],white=[255,255,255];
